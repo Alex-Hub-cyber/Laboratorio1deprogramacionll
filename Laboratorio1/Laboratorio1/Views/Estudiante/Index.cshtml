@@ -1,0 +1,46 @@
+﻿@model List<Laboratorio1.Controllers.EstudianteController>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+    <label for="Nombre">Escribe tu Nombre </label>
+    <br />
+    <input type="text" name=" Nombre" required placeholder="Escribe tu Nombre" />
+    <br />
+    <label for="Lab1">Escribe tu Nota de Laboratorio 1 </label>
+    <br />
+    <input type="number" name="Lab1" required placeholder="Escribe tu Nota" />
+    <br />
+    <label for="Lab2">Escribe tu Nota de Laboratorio 2 </label>
+    <br />
+    <input type="number" name="Lab2" required placeholder="Escribe tu Nota" />
+    <br />
+    <label for="Lab3">Escribe tu Nota de Laboratorio 3 </label>
+    <br />
+    <input type="number" name="Lab3" required placeholder="Escribe tu Nota" />
+    <br />
+    <label for="Par1">Escribe tu Nota del Parcial 1 </label>
+    <br />
+    <input type="number" name="Par1" required placeholder="Escribe tu Nota" />
+    <br />
+    <label for="Par2">Escribe tu Nota del Parcial 2 </label>
+    <br />
+    <input type="number" name="Par2" required placeholder="Escribe tu Nota " />
+    <br />
+    <label for="Par3">Escribe tu Nota del Parcial 3 </label>
+    <br />
+    <input type="number" name="Par3" required placeholder="Escribe tu Nota " />
+    <br />
+    <br />
+
+    <button style="color:red;">Registrar</button>
+
+
+
+}
+
