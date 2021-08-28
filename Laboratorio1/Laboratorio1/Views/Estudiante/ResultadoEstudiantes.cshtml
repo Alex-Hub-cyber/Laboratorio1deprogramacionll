@@ -5,29 +5,37 @@
 }
 
 <h2 style="color:aqua;">Resultado Estudiantes</h2>
-   
-    
+
+
 <table border="3" class="table table-striped">
     <thead>
-    <th>Nombre</th>
-    <th>Lab1</th>
-    <th>Lab2</th>
-    <th>Lab3</th>
-    <th>Par1</th>
-    <th>Par2</th>
-    <th>Par3</th>
-    <br />
-    @foreach (var item in Model)
-    {
         <tr>
-            <td>@item.Nombre</td>
-            <td>@item.lab1</td>
-            <td>@item.lab2</td>
-            <td>@item.lab3</td>
-            <td>@item.par1</td>
-            <td>@item.par2</td>
-            <td>@item.par3</td>
+            <th>Nombre</th>
+
+            <th>Lab1</th>
+            <th>Lab2</th>
+            <th>Lab3</th>
+            <th>Par1</th>
+            <th>Par2</th>
+            <th>Par3</th>
+
         </tr>
-    }
     </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+
+                <td>@item.lab1</td>
+                <td>@item.lab2</td>
+                <td>@item.lab3</td>
+                <td>@item.par1</td>
+                <td>@item.par2</td>
+                <td>@item.par3</td>
+            </tr>
+        }
+    </tbody>
 </table>
+@Html.ActionLink("Volver al Index", "Index", new { @class = "btn btn-success" })
+
